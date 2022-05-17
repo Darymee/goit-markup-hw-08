@@ -1,0 +1,29 @@
+.clients {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.clients__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: var(--team-soc-icon-color);
+
+  transition: border var(--transition-duration) var(--transition-timing),
+    fill var(--transition-duration) var(--transition-timing);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+    fill: var(--accent-color);
+  }
+}
