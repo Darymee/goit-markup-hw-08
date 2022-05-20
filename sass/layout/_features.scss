@@ -25,23 +25,24 @@
 
 .features__meta {
   margin-bottom: 30px;
+
   display: flex;
   justify-content: center;
   align-items: center;
 
-  height: 120px;
   background: var(--team-section-bgc);
   border-radius: 4px;
 }
 
 .features__title {
   margin-bottom: 10px;
-
+  
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-title-color);
+
 
   @media screen and (max-width: 767px) {
     text-align: center;
