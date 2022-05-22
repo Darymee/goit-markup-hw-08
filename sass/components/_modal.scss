@@ -21,20 +21,25 @@
 }
 
 .modal {
+  width: 450px;
+  min-height: 609px;
+
   position: absolute;
   top: 50%;
   left: 50%;
   transition: transform var(--transition-duration) var(--transition-timing);
   transform: translate(-50%, -50%) scale(1) rotate(0);
 
-  min-height: 581px;
-  width: 528px;
-
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;
+
+  @media screen and (min-width: 1200px) {
+    min-height: 581px;
+    width: 528px;
+  }
 }
 
 .btn-close {
@@ -62,15 +67,22 @@
 }
 
 .modal__title {
-  text-align: center;
   margin-bottom: 12px;
+
+  text-align: center;
 
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
+
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-title-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+    line-height: 1.15;
+  }
 }
 
 .modal-form__list {
@@ -90,7 +102,7 @@
 .modal-form__label {
   margin-bottom: 4px;
   font-size: 12px;
-  line-height: 1.167;
+  line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--main-text-color);
 }
@@ -117,7 +129,8 @@
 }
 
 .modal-form__textarea {
-  width: 448px;
+  width: 370px;
+
   min-height: 120px;
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -128,15 +141,24 @@
   transition: border-color var(--transition-duration) var(--transition-timing);
   fill: var(--main-title-color);
 
+  @media screen and (min-width: 1200px) {
+    width: 448px;
+  }
+
   &:hover,
   &:focus {
     border-color: var(--accent-color);
   }
   &::placeholder {
-    font-size: 12px;
-    line-height: 1.67;
+    font-size: 14px;
+    line-height: 1.14;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
+
+    @media screen and (min-width: 1200px) {
+      font-size: 12px;
+      line-height: 1.17;
+    }
   }
 }
 
@@ -158,22 +180,36 @@
 }
 
 .agreement-form {
-  margin-bottom: 30px;
+  margin-bottom: 31px;
+  margin-left: auto;
+  margin-right: auto;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 30px;
+
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
 
 .agreement-form__label {
   display: flex;
   align-items: center;
 
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 1.17;
+
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
   & span {
     display: flex;
     align-items: center;
