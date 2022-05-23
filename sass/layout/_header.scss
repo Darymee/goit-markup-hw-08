@@ -2,20 +2,20 @@
   border-bottom: 1px solid #ececec;
 }
 
-.nav {
-  display: flex;
-  align-items: center;
-}
+// .nav {
+//   display: flex;
+//   align-items: center;
+// }
 
 .header__container {
   display: flex;
   align-items: center;
 }
 
-.header-nav {
-  display: flex;
-  align-items: center;
-}
+// .header-nav {
+//   display: flex;
+//   align-items: center;
+// }
 
 .site-nav {
   // display: flex;
@@ -23,8 +23,6 @@
 }
 
 .header-nav__site-nav {
-  margin-top: 48px;
-  margin-left: 40px;
   margin-bottom: 302px;
   // margin-left: 93px;
 }
@@ -61,17 +59,14 @@
   &--current {
     color: var(--accent-color);
     // position: relative;
-
     // &::after {
     //   content: "";
     //   display: block;
     //   width: 100%;
     //   height: 4px;
-
     //   position: absolute;
     //   left: 0;
     //   bottom: -1px;
-
     //   background-color: var(--accent-color);
     //   border-radius: 2px;
     // }
@@ -81,31 +76,40 @@
 .contacts {
   list-style: none;
 
-  // display: flex;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
-.header-nav__contacts {
-  margin-left: auto;
+// .header-nav__contacts {
+//   margin-left: auto;
+// }
+
+.contacts__item:last-child {
+  margin-bottom: 32px;
 }
 
 .contacts__item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 64px;
 }
 
 .contacts__link {
   text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
 
-  padding-bottom: 32px;
-  padding-top: 32px;
+  // display: inline-flex;
+  // align-items: center;
+  // justify-content: center;
 
-  color: var(--main-text-color);
+  // padding-bottom: 32px;
+  // padding-top: 32px;
+
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
+  color: var(--main-text-color);
+
+  // font-size: 14px;
+  // line-height: 1.14;
 
   transition: color var(--transition-duration) var(--transition-timing);
 
@@ -115,9 +119,42 @@
   }
 }
 
+.contacts__link--current {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+
+  color: var(--accent-color);
+}
+
 .contacts__icon {
   display: none;
 
   // margin-right: 10px;
   // fill: currentColor;
+}
+
+.social-media__list {
+  list-style: none;
+  display: flex;
+}
+
+.social-media__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+}
+
+.social-media__link {
+  margin-right: 10px;
+
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
 }
