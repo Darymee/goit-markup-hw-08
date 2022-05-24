@@ -36,6 +36,9 @@
   color: var(--main-color-title);
   position: relative;
   transition: color var(--transition-duration) var(--transition-timing);
+  &--current {
+    color: var(--accent-color);
+  }
 
   &:hover,
   &:focus {
