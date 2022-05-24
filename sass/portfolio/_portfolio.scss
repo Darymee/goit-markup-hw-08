@@ -29,7 +29,6 @@
   flex-wrap: wrap;
 
   @media screen and (min-width: 768px) {
-    flex-wrap: none;
     justify-content: center;
   }
 }
@@ -76,14 +75,23 @@
 .portfolio {
   list-style: none;
 
-  display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
 .portfolio__item {
-  margin: 15px;
-  flex-basis: calc((100% - 60px) / 2);
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    margin: 15px;
+    flex-basis: calc((100% - 60px) / 2);
+  }
 
   @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 90px) / 3);
@@ -142,6 +150,11 @@
 .portfolio-overlay {
   position: relative;
   overflow: hidden;
+}
+
+.portfolio-overlay__image {
+  display: block;
+  max-width: 100%;
 }
 
 .portfolio-overlay__text {
