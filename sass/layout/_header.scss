@@ -58,6 +58,32 @@
   margin-bottom: 64px;
 }
 
+.social-media {
+  list-style: none;
+  display: flex;
+}
+
+.social-media__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+}
+
+.social-media__link {
+  margin-right: 10px;
+
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+// TABLET / DESKTOP
+
 .header-nav {
   @media screen and (max-width: 767px) {
     display: none;
@@ -227,28 +253,4 @@
 .contacts__icon {
   margin-right: 10px;
   fill: currentColor;
-}
-
-.social-media {
-  list-style: none;
-  display: flex;
-}
-
-.social-media__item {
-  &:not(:last-child) {
-    margin-right: 10px;
-    border-right: 1px solid rgba(33, 33, 33, 0.2);
-  }
-}
-
-.social-media__link {
-  margin-right: 10px;
-
-  cursor: pointer;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.22;
-  letter-spacing: 0.02em;
-  color: var(--accent-color);
 }
