@@ -24,7 +24,7 @@
 
     background-color: #ffffff;
     transform: translateX(-100%);
-    transition: translate var(--transition-duration) var(--transition-timing);
+    transition: transform var(--transition-duration) var(--transition-timing);
 
     &.is-hidden {
       transform: translateX(0);
