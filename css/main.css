@@ -136,6 +136,9 @@ body {
 }
 
 .logo {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: block;
   text-decoration: none;
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
@@ -143,6 +146,12 @@ body {
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .logo {
@@ -517,18 +526,12 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
-@media screen and (max-width: 767px) {
-  .header__container {
-    display: flex;
-    align-items: center;
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
+.header__container {
+  display: flex;
+  align-items: center;
 }
 @media screen and (min-width: 768px) {
   .header__container {
-    display: flex;
-    align-items: center;
     justify-content: start;
   }
 }
@@ -1297,8 +1300,10 @@ body {
 .filter__item:not(:last-child) {
   margin-right: 8px;
 }
-.filter__item:nth-child(-n+3) {
-  margin-bottom: 21px;
+@media screen and (max-width: 767px) {
+  .filter__item:nth-child(-n+3) {
+    margin-bottom: 15px;
+  }
 }
 
 .filter__btn {
@@ -1315,7 +1320,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  background-color: #f5f4f2;
+  background-color: #f5f4fa;
   transition: color var(--transition-duration) var(--transition-timing), background-color var(--transition-duration) var(--transition-timing), box-shadow var(--transition-duration) var(--transition-timing);
 }
 .filter__btn:hover, .filter__btn:focus {
@@ -1361,6 +1366,11 @@ body {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
 }
+@media screen and (min-width: 768px) {
+  .portfolio-meta {
+    flex-grow: 1;
+  }
+}
 
 .portfolio-meta__title {
   margin-bottom: 4px;
@@ -1384,6 +1394,13 @@ body {
 }
 .portfolio__link:hover, .portfolio__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+@media screen and (min-width: 768px) {
+  .portfolio__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
 }
 
 .portfolio-overlay {
@@ -1411,4 +1428,15 @@ body {
 }
 .portfolio__link:hover .portfolio-overlay__text, .portfolio__link:focus .portfolio-overlay__text {
   transform: translateY(0%);
+}
+@media screen and (max-width: 767px) {
+  .portfolio-overlay__text {
+    padding: 77px 24px;
+    font-size: 4vmin;
+  }
+}
+@media screen and (mix-width: 768px) {
+  .portfolio-overlay__text {
+    padding: 49px 24px;
+  }
 }/*# sourceMappingURL=main.css.map */

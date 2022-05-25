@@ -1,4 +1,8 @@
 .logo {
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  display: block;
   text-decoration: none;
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
@@ -6,6 +10,11 @@
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
 
   @media screen and (min-width: 1200px) {
     font-size: 26px;

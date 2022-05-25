@@ -231,33 +231,54 @@
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="about">
             <li class="about__item">
-              <img
-                src="./images/image1.jpg"
-                alt="процесс разработки"
-                width="370"
-                height="294"
-                class="about__image"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/about/about1-desk.jpg    1x,
+                    ./images/about/about1-desk-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <img
+                  src="./images/about/about1-desk.jpg"
+                  alt="процесс разработки"
+                  class="about__image"
+                />
+              </picture>
               <p class="about__overlay-text">Десктопные приложения</p>
             </li>
             <li class="about__item">
-              <img
-                src="./images/image2.jpg"
-                alt="разработка мобильного приложения"
-                width="370"
-                height="294"
-                class="about__image"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/about/about2-desk.jpg    1x,
+                    ./images/about/about2-desk-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <img
+                  src="./images/about/about2-desk.jpg"
+                  alt="разработка мобильного приложения"
+                  class="about__image"
+                />
+              </picture>
               <p class="about__overlay-text">Мобильные приложения</p>
             </li>
             <li class="about__item">
-              <img
-                src="./images/image3.jpg"
-                alt="подбор цвета для веб дизайна"
-                width="370"
-                height="294"
-                class="about__image"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/about/about3-desk.jpg    1x,
+                    ./images/about/about3-desk-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <img
+                  src="./images/about/about3-desk.jpg "
+                  alt="подбор цвета для веб дизайна"
+                  class="about__image"
+                />
+              </picture>
               <p class="about__overlay-text">Дизайнерские решения</p>
             </li>
           </ul>
