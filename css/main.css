@@ -1352,6 +1352,7 @@ body {
   .portfolio__item {
     margin: 15px;
     flex-basis: calc((100% - 60px) / 2);
+    margin-bottom: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
