@@ -1439,10 +1439,9 @@ body {
 @media screen and (max-width: 767px) {
   .portfolio-overlay__text {
     padding: 77px 24px;
-    font-size: 4vmin;
   }
 }
-@media screen and (mix-width: 768px) {
+@media screen and (max-width: 767px) and (mix-width: 768px) {
   .portfolio-overlay__text {
     padding: 49px 24px;
   }
