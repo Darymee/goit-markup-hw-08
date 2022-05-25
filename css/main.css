@@ -59,7 +59,6 @@ body {
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid orange;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -433,15 +432,13 @@ body {
 
 .agreement-form {
   margin-bottom: 31px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 @media screen and (min-width: 1200px) {
   .agreement-form {
     margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 12px;
     line-height: 1.17;
   }
@@ -512,6 +509,12 @@ body {
 }
 .modal-form__btn:hover, .modal-form__btn:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (min-width: 480px) {
+  .agreement-wrap {
+    display: flex;
+  }
 }
 
 .agreement-form__link {
