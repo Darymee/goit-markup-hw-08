@@ -1063,6 +1063,9 @@ body {
   padding-bottom: 60px;
   background-color: var(--footer-bgc);
 }
+.footer .logo {
+  padding: 0;
+}
 
 .footer-contacts {
   margin-bottom: 60px;

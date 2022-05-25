@@ -3,6 +3,9 @@
   padding-bottom: 60px;
 
   background-color: var(--footer-bgc);
+  & .logo {
+    padding: 0;
+  }
 }
 
 .footer-contacts {
