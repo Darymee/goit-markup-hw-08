@@ -22,9 +22,7 @@
   }
 
   @media screen and (max-width: 767px) {
-    padding-top: 93px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 93px 15px 0;
   }
 }
 
@@ -39,8 +37,8 @@
   transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
 
   max-width: 450px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+
   overflow-y: auto;
 
   @media screen and (min-width: 768px) {
