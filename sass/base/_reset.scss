@@ -21,3 +21,17 @@ ol {
 img {
   display: block;
 }
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}

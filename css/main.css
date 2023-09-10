@@ -1,6 +1,7 @@
 :root {
   --main-title-color: #212121;
   --accent-color: #2196f3;
+  --btn-hover: #248be0;
   --logo-header-color: #000000;
   --main-text-color: #757575;
   --hero-title-color: #ffffff;
@@ -51,14 +52,31 @@ img {
   display: block;
 }
 
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Roboto, sans-serif;
   color: var(--main-color-title);
 }
 
 .container {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -183,7 +201,7 @@ body {
   .mob-menu {
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 2;
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -202,7 +220,6 @@ body {
 }
 
 .menu-open-btn {
-  cursor: pointer;
   display: block;
   margin-left: auto;
   padding: 0;
@@ -225,7 +242,6 @@ body {
   position: absolute;
   top: 10px;
   right: 15px;
-  cursor: pointer;
   margin-left: auto;
   margin-bottom: 8px;
   padding: 0;
@@ -249,6 +265,7 @@ body {
 
 .backdrop {
   position: fixed;
+  z-index: 2;
   top: 0;
   left: 0;
   width: 100%;
@@ -304,7 +321,6 @@ body {
 }
 
 .btn-close {
-  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -372,7 +388,6 @@ body {
   border-radius: 4px;
   outline: none;
   padding-left: 42px;
-  cursor: pointer;
   fill: var(--main-title-color);
   transition: border-color var(--transition-duration) var(--transition-timing);
 }
@@ -388,7 +403,6 @@ body {
   border-radius: 4px;
   padding: 12px 16px;
   outline: none;
-  cursor: pointer;
   transition: border-color var(--transition-duration) var(--transition-timing);
   fill: var(--main-title-color);
 }
@@ -463,6 +477,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
   width: 16px;
   height: 15px;
   border: 2px solid var(--main-title-color);
@@ -491,7 +506,6 @@ body {
 }
 
 .modal-form__btn {
-  cursor: pointer;
   display: block;
   min-width: 200px;
   border: none;
@@ -518,6 +532,30 @@ body {
   overflow: hidden;
 }
 
+.btn-anchor {
+  display: none;
+}
+@media screen and (min-width: 480px) {
+  .btn-anchor {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    bottom: 60px;
+    right: 30px;
+    border-radius: 50%;
+    padding: 15px;
+    background-color: var(--accent-color);
+    transition: background-color var(--transition-duration) var(--transition-timing);
+  }
+  .btn-anchor:hover, .btn-anchor:focus {
+    background-color: var(--btn-hover);
+  }
+}
+
+.btn-anchor__icon {
+  fill: var(--team-card-bg-color);
+}
+
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -542,7 +580,6 @@ body {
 
 .mob-nav__link {
   text-decoration: none;
-  cursor: pointer;
   display: block;
   font-weight: 500;
   font-size: 40px;
@@ -586,7 +623,6 @@ body {
 
 .social-media__link {
   margin-right: 10px;
-  cursor: pointer;
   text-decoration: none;
   font-weight: 500;
   font-size: 18px;
@@ -637,7 +673,6 @@ body {
   .site-nav__link {
     text-decoration: none;
     display: block;
-    cursor: pointer;
     padding-bottom: 32px;
     padding-top: 32px;
     font-weight: 500;
@@ -811,7 +846,6 @@ body {
 }
 
 .hero__btn {
-  cursor: pointer;
   display: inline-block;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -824,11 +858,10 @@ body {
   letter-spacing: 0.06em;
   color: var(--hero-title-color);
   background-color: var(--accent-color);
-  transition: background-color var(--transition-duration) var(--transition-timing), color var(--transition-duration) var(--transition-timing);
+  transition: background-color var(--transition-duration) var(--transition-timing);
 }
 .hero__btn:hover, .hero__btn:focus {
-  color: var(--hero-title-color);
-  background-color: #248be0;
+  background-color: var(--btn-hover);
 }
 
 .features {
@@ -1239,14 +1272,12 @@ body {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   outline: none;
-  cursor: pointer;
 }
 .form__input::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
 
 .follow-btn {
-  cursor: pointer;
   display: flex;
   text-align: center;
   align-items: center;
@@ -1266,7 +1297,10 @@ body {
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   fill: var(--hero-title-color);
-  transition: background-color var(--transition-duration) var(--transition-timing), color var(--transition-duration) var(--transition-timing);
+  transition: background-color var(--transition-duration) var(--transition-timing);
+}
+.follow-btn:hover, .follow-btn:focus {
+  background-color: var(--btn-hover);
 }
 
 .portfolio__title--visually-hidden {
@@ -1317,7 +1351,6 @@ body {
 }
 
 .filter__btn {
-  cursor: pointer;
   display: inline-block;
   border: none;
   padding: 6px 22px;

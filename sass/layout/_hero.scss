@@ -85,7 +85,6 @@
 }
 
 .hero__btn {
-  cursor: pointer;
   display: inline-block;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -101,12 +100,10 @@
   background-color: var(--accent-color);
 
   transition: background-color var(--transition-duration)
-      var(--transition-timing),
-    color var(--transition-duration) var(--transition-timing);
+    var(--transition-timing);
 
   &:hover,
   &:focus {
-    color: var(--hero-title-color);
-    background-color: #248be0;
+    background-color: var(--btn-hover);
   }
 }

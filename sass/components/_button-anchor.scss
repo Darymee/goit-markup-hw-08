@@ -1,0 +1,27 @@
+.btn-anchor {
+  display: none;
+
+  @media screen and (min-width: 480px) {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    bottom: 60px;
+    right: 30px;
+
+    border-radius: 50%;
+    padding: 15px;
+    background-color: var(--accent-color);
+
+    transition: background-color var(--transition-duration)
+      var(--transition-timing);
+
+    &:hover,
+    &:focus {
+      background-color: var(--btn-hover);
+    }
+  }
+}
+
+.btn-anchor__icon {
+  fill: var(--team-card-bg-color);
+}

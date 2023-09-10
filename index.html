@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="Image/x-icon" href="images/favicon.ico" rel="icon" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -20,7 +21,7 @@
   </head>
   <body>
     <!-- header -->
-    <header class="header">
+    <header class="header" id="header">
       <div class="container header__container">
         <a href="./index.html" class="logo"
           >Web<span class="logo__text logo__text--dark">Studio</span></a
@@ -843,6 +844,15 @@
         </div>
       </div>
     </footer>
+
+    <!-- Button anchor -->
+    <div>
+      <a href="#header" class="btn-anchor">
+        <svg width="24" height="24" class="btn-anchor__icon">
+          <use href="./images/symbol-defs.svg#icon-arrow-up"></use>
+        </svg>
+      </a>
+    </div>
 
     <!-- Modal window -->
     <div class="backdrop is-hidden" data-modal>

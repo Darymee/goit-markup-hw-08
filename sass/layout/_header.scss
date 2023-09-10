@@ -19,7 +19,6 @@
 }
 .mob-nav__link {
   text-decoration: none;
-  cursor: pointer;
 
   display: block;
 
@@ -71,7 +70,6 @@
 .social-media__link {
   margin-right: 10px;
 
-  cursor: pointer;
   text-decoration: none;
   font-weight: 500;
   font-size: 18px;
@@ -120,7 +118,6 @@
   @media screen and (min-width: 768px) {
     text-decoration: none;
     display: block;
-    cursor: pointer;
 
     padding-bottom: 32px;
     padding-top: 32px;
