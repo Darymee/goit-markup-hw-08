@@ -16,10 +16,10 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/main.css" />
-    <title>Студия</title>
+    <title>WebStudio | Home</title>
   </head>
   <body>
-    <!-- Шапка сайта -->
+    <!-- header -->
     <header class="header">
       <div class="container header__container">
         <a href="./index.html" class="logo"
@@ -31,14 +31,16 @@
               <a
                 href="./index.html"
                 class="site-nav__link site-nav__link--current"
-                >Студия</a
+                >Studio</a
               >
             </li>
             <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
+              <a href="./portfolio.html" class="site-nav__link">Portfolio</a>
             </li>
             <li class="site-nav__item">
-              <a href="" class="site-nav__link">Контакты</a>
+              <a href="#contacts" class="site-nav__link contacts-link"
+                >Contacts</a
+              >
             </li>
           </ul>
         </nav>
@@ -81,14 +83,16 @@
                 <a
                   href="./index.html"
                   class="mob-nav__link mob-nav__link--current"
-                  >Студия</a
+                  >Studio</a
                 >
               </li>
               <li class="mob-nav__item">
-                <a href="./portfolio.html" class="mob-nav__link">Портфолио</a>
+                <a href="./portfolio.html" class="mob-nav__link">Portfolio</a>
               </li>
               <li class="mob-nav__item">
-                <a href="" class="mob-nav__link">Контакты</a>
+                <a href="#contacts" class="mob-nav__link mob-nav__contact"
+                  >Contacts</a
+                >
               </li>
             </ul>
             <div class="contacts-wrap">
@@ -154,23 +158,23 @@
       </div>
     </header>
 
-    <!-- Основная часть сайта -->
+    <!-- main-->
     <main>
-      <!-- Секция "герой" -->
+      <!-- Hero Section" -->
       <section class="hero">
         <div class="container">
           <h1 class="hero__title">
-            Эффективные решения <br />для вашего бизнеса
+            Effective solutions <br />for your business
           </h1>
-          <button data-modal-open class="hero__btn">Заказать услугу</button>
+          <button data-modal-open class="hero__btn">Order service</button>
         </div>
       </section>
 
-      <!-- Секция "особенности" -->
+      <!-- Features section -->
       <section class="section">
         <div class="container">
           <h2 class="section__title section__title--visually-hidden">
-            Особенности вебстудии
+            Features of the WebStudio
           </h2>
           <ul class="features">
             <li class="features__item">
@@ -179,10 +183,10 @@
                   <use href="./images/symbol-defs.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="features__title">Внимание к деталям</h3>
+              <h3 class="features__title">Attention to detail</h3>
               <p class="features__text">
-                Идейные соображения, а также начало повседневной работы по
-                формированию позиции.
+                Ideological considerations, as well as the beginning of the
+                daily work of forming a position.
               </p>
             </li>
             <li class="features__item">
@@ -191,10 +195,10 @@
                   <use href="./images/symbol-defs.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="features__title">Пунктуальность</h3>
+              <h3 class="features__title">Punctuality</h3>
               <p class="features__text">
-                Задача организации, в особенности же рамки и место обучения
-                кадров влечет за собой.
+                The task of the organization, in particular the scope and
+                location of personnel training, entails.
               </p>
             </li>
             <li class="features__item">
@@ -203,10 +207,10 @@
                   <use href="./images/symbol-defs.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="features__title">Планирование</h3>
+              <h3 class="features__title">Planning</h3>
               <p class="features__text">
-                Равным образом консультация с широким активом в значительной
-                степени обуславливает.
+                Likewise, consultation with a broad asset is largely
+                conditioned.
               </p>
             </li>
             <li class="features__item">
@@ -215,20 +219,20 @@
                   <use href="./images/symbol-defs.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="features__title">Современные технологии</h3>
+              <h3 class="features__title">Modern technologies</h3>
               <p class="features__text">
-                Значимость этих проблем настолько очевидна, что реализация
-                плановых заданий.
+                The significance of these problems is so obvious that the
+                implementation of planned targets.
               </p>
             </li>
           </ul>
         </div>
       </section>
 
-      <!-- Секция "Чем мы занимаемся" -->
+      <!-- What are we doing section -->
       <section class="section section--no-padding-top section--is-hidden">
         <div class="container">
-          <h2 class="section__title">Чем мы занимаемся</h2>
+          <h2 class="section__title">What are we doing</h2>
           <ul class="about">
             <li class="about__item">
               <picture>
@@ -241,11 +245,11 @@
                 />
                 <img
                   src="./images/about/about1-desk.jpg"
-                  alt="процесс разработки"
+                  alt="development process"
                   class="about__image"
                 />
               </picture>
-              <p class="about__overlay-text">Десктопные приложения</p>
+              <p class="about__overlay-text">Desktop applications</p>
             </li>
             <li class="about__item">
               <picture>
@@ -258,11 +262,11 @@
                 />
                 <img
                   src="./images/about/about2-desk.jpg"
-                  alt="разработка мобильного приложения"
+                  alt="mobile application development"
                   class="about__image"
                 />
               </picture>
-              <p class="about__overlay-text">Мобильные приложения</p>
+              <p class="about__overlay-text">Mobile applications</p>
             </li>
             <li class="about__item">
               <picture>
@@ -275,20 +279,20 @@
                 />
                 <img
                   src="./images/about/about3-desk.jpg "
-                  alt="подбор цвета для веб дизайна"
+                  alt="color selection for web design"
                   class="about__image"
                 />
               </picture>
-              <p class="about__overlay-text">Дизайнерские решения</p>
+              <p class="about__overlay-text">Design solutions</p>
             </li>
           </ul>
         </div>
       </section>
 
-      <!-- Секция "Наша команда" -->
+      <!-- Our team section -->
       <section class="section section--another-background">
         <div class="container">
-          <h2 class="section__title">Наша команда</h2>
+          <h2 class="section__title">Our team</h2>
           <ul class="team">
             <li class="team__item">
               <picture>
@@ -315,12 +319,12 @@
                 />
                 <img
                   src="./images/team/ihor/ihor-desk.jpg"
-                  alt="фото Игоря Демьяненко"
+                  alt="Photo: Ihor Demyanenko"
                   class="team__image"
                 />
               </picture>
               <div class="team-box team__team-box">
-                <h3 class="team-box__title">Игорь Демьяненко</h3>
+                <h3 class="team-box__title">Ihor Demyanenko</h3>
                 <p lang="en" class="team-box__text">Product Designer</p>
                 <ul class="social">
                   <li class="social__item">
@@ -403,12 +407,12 @@
                 />
                 <img
                   src="./images/team/olha/olha-desk.jpg"
-                  alt="фото Ольга Репина"
+                  alt="Photo : Olha Repina"
                   class="team__image"
                 />
               </picture>
               <div class="team-box team__team-box">
-                <h3 class="team-box__title">Ольга Репина</h3>
+                <h3 class="team-box__title">Olha Repina</h3>
                 <p lang="en" class="team-box__text">Frontend Developer</p>
                 <ul class="social">
                   <li class="social__item">
@@ -491,12 +495,12 @@
                 />
                 <img
                   src="./images/team/nikolai/nikolai-desk.jpg "
-                  alt="фото Николая Тарасова"
+                  alt="Photo : Mykola Tarasov"
                   class="team__image"
                 />
               </picture>
               <div class="team-box team__team-box">
-                <h3 class="team-box__title">Николай Тарасов</h3>
+                <h3 class="team-box__title">Mykola Tarasov</h3>
                 <p lang="en" class="team-box__text">Marketing</p>
                 <ul class="social">
                   <li class="social__item">
@@ -579,13 +583,13 @@
                 />
                 <img
                   src="./images/team/mikhail/mikhail-desk.jpg"
-                  alt="фото Михаила Ермакова"
+                  alt="Photo : Mykhailo Demyanenko"
                   class="team__image"
                 />
               </picture>
 
               <div class="team-box team__team-box">
-                <h3 class="team-box__title">Михаил Ермаков</h3>
+                <h3 class="team-box__title">Mykhailo Demyanenko</h3>
                 <p lang="en" class="team-box__text">UI Designer</p>
                 <ul class="social">
                   <li class="social__item">
@@ -647,10 +651,10 @@
         </div>
       </section>
 
-      <!-- Секция "Постоянные клиенты" -->
+      <!-- Regular customers section" -->
       <section class="section">
         <div class="container">
-          <h2 class="section__title">Постоянные клиенты</h2>
+          <h2 class="section__title">Regular customers</h2>
           <ul class="clients">
             <li class="clients__item">
               <a
@@ -719,8 +723,8 @@
       </section>
     </main>
 
-    <!-- Подвал сайта -->
-    <footer class="footer">
+    <!-- footer -->
+    <footer class="footer" id="contacts">
       <div class="container blocks">
         <div class="footer-wrap">
           <div class="footer-contacts footer__footer-contacts">
@@ -736,15 +740,15 @@
                     rel="noreferrer noopener"
                     class="address-list__link address-list__link--white"
                   >
-                    г. Киев, пр-т Леси Украинки, 26
+                    Kyiv, 26 Lesi Ukrainky Ave, Ukraine
                   </a>
                 </li>
                 <li class="address-list__item">
                   <a
-                    href="mailto:info@example.com"
+                    href="mailto:info@devstudio.com"
                     class="address-list__link address-list__link--grey"
-                    >info@example.com</a
-                  >
+                    >info@devstudio.com
+                  </a>
                 </li>
                 <li class="address-list__item">
                   <a
@@ -757,7 +761,7 @@
             </address>
           </div>
           <div class="footer-social footer__footer-social">
-            <h2 class="footer-social__title">Присоединяйтесь</h2>
+            <h2 class="footer-social__title">Join us</h2>
             <ul class="soc-list">
               <li class="soc-list__item">
                 <a
@@ -815,7 +819,7 @@
         </div>
 
         <div class="follow">
-          <p class="follow__text">Подпишитесь на рассылку</p>
+          <p class="follow__text">Subscribe to our newsletter</p>
           <form class="form">
             <div class="form__field">
               <label for="follow" class="form__label"></label>
@@ -830,8 +834,8 @@
               />
             </div>
             <button type="submit" class="follow-btn">
-              Подписаться
-              <svg class="follow-btn__icon" width="24" height="24">
+              Subscribe
+              <svg width="24" height="24">
                 <use href="./images/symbol-defs.svg#icon-btn-follow"></use>
               </svg>
             </button>
@@ -840,7 +844,7 @@
       </div>
     </footer>
 
-    <!-- Модальное окно -->
+    <!-- Modal window -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="btn-close" data-modal-close>
@@ -848,11 +852,13 @@
             <use href="./images/symbol-defs.svg#icon-close"></use>
           </svg>
         </button>
-        <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
+        <p class="modal__title">
+          Leave your information and we will call you back
+        </p>
         <form class="modal-form">
           <ul class="modal-form__list">
             <li class="modal-form__item">
-              <label for="user-name" class="modal-form__label">Имя</label>
+              <label for="user-name" class="modal-form__label">Name</label>
               <div class="input-wrap">
                 <input
                   type="text"
@@ -870,7 +876,7 @@
             </li>
 
             <li class="modal-form__item">
-              <label for="user-tel" class="modal-form__label">Телефон</label>
+              <label for="user-tel" class="modal-form__label">Phone</label>
               <div class="input-wrap">
                 <input
                   type="tel"
@@ -888,7 +894,7 @@
               </div>
             </li>
             <li class="modal-form__item">
-              <label for="user-email" class="modal-form__label">Почта</label>
+              <label for="user-email" class="modal-form__label">E-mail</label>
               <div class="input-wrap">
                 <input
                   type="email"
@@ -906,13 +912,13 @@
             </li>
             <li class="modal-form__item">
               <label for="user-comment" class="modal-form__label"
-                >Комментарий</label
+                >Comment</label
               >
               <textarea
                 name="comment"
                 id="user-comment"
                 class="modal-form__textarea"
-                placeholder="Введите текст"
+                placeholder="Please enter your text"
                 minlength="5"
               ></textarea>
             </li>
@@ -933,12 +939,14 @@
                 </svg>
               </span>
               <span class="agreement-wrap">
-                Соглашаюсь с рассылкой и принимаю&nbsp;
-                <a href="" class="agreement-form__link">Условия договора</a>
+                I agree with the newsletter and accept&nbsp;
+                <a href="" class="agreement-form__link"
+                  >the terms of the agreement</a
+                >
               </span>
             </label>
           </div>
-          <button type="submit" class="modal-form__btn">Отправить</button>
+          <button type="submit" class="modal-form__btn">Send</button>
         </form>
       </div>
     </div>

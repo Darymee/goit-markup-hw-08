@@ -58,11 +58,12 @@
 .social-media {
   list-style: none;
   display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .social-media__item {
   &:not(:last-child) {
-    margin-right: 10px;
     border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
 }
@@ -79,7 +80,7 @@
   color: var(--accent-color);
 }
 
-// TABLET / DESKTOP
+/* TABLET / DESKTOP  */
 
 .header-nav {
   @media screen and (max-width: 767px) {
@@ -227,9 +228,6 @@
   letter-spacing: 0.02em;
   color: var(--main-text-color);
 
-  // font-size: 14px;
-  // line-height: 1.14;
-
   transition: color var(--transition-duration) var(--transition-timing);
 
   &:hover,
@@ -242,7 +240,7 @@
   font-weight: 500;
   font-size: 34px;
   line-height: 1.18;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.68px;
 
   color: var(--accent-color);
 }

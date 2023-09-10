@@ -43,6 +43,10 @@
 }
 
 .footer__footer-contacts {
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
   }
@@ -185,6 +189,7 @@
   display: flex;
   text-align: center;
   align-items: center;
+  justify-content: space-around;
   min-width: 200px;
   border: none;
   border-radius: 4px;
@@ -205,8 +210,4 @@
   transition: background-color var(--transition-duration)
       var(--transition-timing),
     color var(--transition-duration) var(--transition-timing);
-}
-
-.follow-btn__icon {
-  margin-left: 10px;
 }
